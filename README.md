@@ -12,7 +12,9 @@ More about the event: https://www.meetup.com/Santa-Barbara-R-Users-Group/events/
 
 We are going to look into the `Stream Team` database built by SB Channelkeeper. This program aims to  to collect and disseminate data to measure the health of local streams. It is one of the most successful and longest running program of SB Channelkepper. This program samples 47 stream sites in the watersheds of the Goleta Valley, Carpinteria Valley and Ventura River. Data collection starts in 2001 and is still on going.
 
-Data portal: <https://www.sbck.org/current-issues/water-quality-monitoring/download-our-data/>
+Official data portal: <https://www.sbck.org/current-issues/water-quality-monitoring/download-our-data/>
+
+Note that we got a more recent version of the dataset for this event! This data set has been added to our event repository <https://github.com/R-Meetup-SB/hackathon-201806>
 
 # Goals 
 
@@ -41,7 +43,7 @@ To help with the event and be sure teams are exchanging and brainstorming, we wo
 
 ## Collaborative
 
-We will work in teams of 3-4 participants. We hope we can create team in an organic way, but we might have to randomly assign people for time constrain reasons. We will promote the use of the mob programming concept (to be introudced) to foster collaboration within teams. Each team will work on a part of the project and will contribute to the final product.
+We will work in teams of 3-4 participants. We hope we can create team in an organic way, but we might have to randomly assign people for time constrain reasons. We will promote the use of the **mob programming** concept (to be introudced) to foster collaboration within teams. Each team will work on a part of the project and will contribute to the final product.
 
 ## Inclusive
 
