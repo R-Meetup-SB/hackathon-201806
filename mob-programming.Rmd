@@ -21,9 +21,9 @@ https://blog.newrelic.com/2017/10/31/mob-programming-hurdles/
 - **Set specific tasks for each session:** When our mob gathers for a session, we first agree on and create a checklist of the tasks we are going to complete, and order them by priority on a whiteboard. This ensures we are all focused on the same task and keeps us moving forward. Additionally, this keeps us aligned with Minimal Marketable Feature (MMF) work, which we can communicate with our engineering and product managers to assure them we’re completing tasks that align with developing small, self-contained features that demonstrate immediate customer value.
 
 Other sources:  
-https://medium.com/comparethemarket/i-did-mob-programming-every-day-for-5-months-heres-what-i-learnt-b586fb8b67c
-https://blog.newrelic.com/2017/10/10/mob-programming-introduction/
-https://www.hanselminutes.com/553/mob-programming-with-woody-zuill
-http://mobprogramming.org/mob-programming-basics/
+- https://medium.com/comparethemarket/i-did-mob-programming-every-day-for-5-months-heres-what-i-learnt-b586fb8b67c
+- https://blog.newrelic.com/2017/10/10/mob-programming-introduction/
+- https://www.hanselminutes.com/553/mob-programming-with-woody-zuill
+- http://mobprogramming.org/mob-programming-basics/
 
 
