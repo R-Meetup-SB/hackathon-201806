@@ -1,0 +1,20 @@
+---
+title: "Mob programming"
+output: html_notebook
+---
+
+Basic principles & practices ([source](https://www.agileconnection.com/article/getting-started-mob-programming)): 
+
+- **Treat each other with kindness, consideration, and respect** - makes group work more fun and sustainable
+- **Driver/navigator pair programming adapted to work with the whole team** - “For an idea to go from your head into the computer, it _must_ go through someone else’s hands.” Speak at the highest level of abstraction that the driver (and the rest of the team) is able to digest at the moment
+- **Timed Rotation** - 10-15 minutes. We don’t require that everyone take the driver role; it is everyone’s choice whether to do so
+- **Whole Team** - every contributor to the project is an integral part of the whole team; when we don’t have the skills we need within the team, we find someone who does and invite them to work with us to accomplish the needed work
+- **Reflect, Tune, and Adjust Frequently** - based on agile principle: “At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.” 
+
+Other sources:  
+https://medium.com/comparethemarket/i-did-mob-programming-every-day-for-5-months-heres-what-i-learnt-b586fb8b67c
+https://blog.newrelic.com/2017/10/10/mob-programming-introduction/
+https://www.hanselminutes.com/553/mob-programming-with-woody-zuill
+http://mobprogramming.org/mob-programming-basics/
+
+
