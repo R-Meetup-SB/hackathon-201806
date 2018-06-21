@@ -99,9 +99,27 @@ site_list <- site_list %>%
   # Separate Column containing Lat and Long to two columns
   tidyr::separate(`GeographicCoordinates(DecimalDegrees)`, c("Longitude", "Latitude"), sep = ",")
 
-# Output CSV Files --------------------------------------------------------
-csv_names <- sprintf("%s.csv", names(my_data))
 
-# Be sure to double check that the csv_name matches the desired outputted dataframe
-# chemistry %>%
-#  readr::write_csv(path = csv_names[[1]])
+# Clean Standard Column Names ---------------------------------------------
+
+names(central_coast_standards) <- gsub(" ", "", names(central_coast_standards))
+names(la_basin_standards) <- gsub(" ", "", names(la_basin_standards))
+
+# Output CSV Files --------------------------------------------------------
+clean_data = list("Chemistry" = chemistry, 
+                  "Bacteria" = bacteria, 
+                  "Nutrients" = nutrients, 
+                  "SiteList" = site_list, 
+                  "CentralCoastStandards" = central_coast_standards, 
+                  "LABasinStandards" = la_basin_standards)
+
+# Create array containing output file name and path
+csv_names <- sprintf("data/%s.csv", names(my_data))
+
+# for-loop to create new csv files with tidy data
+for (i in 1:length(clean_data)){
+  clean_data[[i]] %>%
+    readr::write_csv(path = csv_names[[i]])
+}
+
+print('Done!')
