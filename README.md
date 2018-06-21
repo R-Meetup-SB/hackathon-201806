@@ -43,7 +43,7 @@ To help with the event and be sure teams are exchanging and brainstorming, we wo
 
 ## Collaborative
 
-We will work in teams of 3-4 participants. We hope we can create team in an organic way, but we might have to randomly assign people for time constrain reasons. We will promote the use of the **mob programming** concept (to be introudced) to foster collaboration within teams. Each team will work on a part of the project and will contribute to the final product.
+We will work in teams of 3-4 participants. We hope we can create team in an organic way, but we might have to randomly assign people for time constrain reasons. We will promote the use of the **mob programming** concept (to be introduced) to foster collaboration within teams. Each team will work on a part of the project and will contribute to the final product.
 
 ## Inclusive
 
