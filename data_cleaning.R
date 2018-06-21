@@ -9,7 +9,6 @@
 # If needed this would handle downloading all dependencies (except `here` package)
 # install.packages("tidyverse")
 library(magrittr)
-library(ggplot2)
 library(here)
 here::here()
 
@@ -19,8 +18,6 @@ here::here()
 # readxl
 # lubridate
 # tidyr
-
-# Here parent diretory should contain the excel file for the hackathon
 
 # Get file path
 file_path <- here::here("hackathon_20180621.xlsx") 
@@ -101,3 +98,10 @@ site_list <- site_list %>%
   dplyr::mutate(SamplingFrequency = tolower(SamplingFrequency)) %>%
   # Separate Column containing Lat and Long to two columns
   tidyr::separate(`GeographicCoordinates(DecimalDegrees)`, c("Longitude", "Latitude"), sep = ",")
+
+# Output CSV Files --------------------------------------------------------
+csv_names <- sprintf("%s.csv", names(my_data))
+
+# Be sure to double check that the csv_name matches the desired outputted dataframe
+# chemistry %>%
+#  readr::write_csv(path = csv_names[[1]])
