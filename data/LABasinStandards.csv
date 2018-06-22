@@ -1,0 +1,12 @@
+Parameter,WaterQualityStandard,RegulatorySource
+Conductivity,"<3,000 uS/cm","Central Coast Basin Plan, Chapter III, Section II.A.2 Table 3-3"
+Dissolved Oxygen (Warm Water Stream),> 5 mg/L,Los Angeles Basin Plan (Page 3-29)
+Dissolved Oxygen (Cold Water and SPWN Stream),> 7 mg/L,Los Angeles Basin Plan (Page 3-29)
+pH,> 6.5 and < 8.5,Los Angeles Basin Plan (Page 3-35)
+Turbidity,< 50 NTU,Los Angeles Basin Plan (Page 3-38)
+Nitrate - LA Basin,< 5 mg/L,Los Angeles Basin Plan Page 3-30 (Table 3-10)
+Nitrate - EPA,< 0.16 mg/L,US EPA Recommended Level for Streams in Ecoregion III sub-region 6
+Phosphate,< 0.03 mg/L,US EPA Recommended Level for Streams in Ecoregion III sub-region 6
+E. coli,< 235 MPN/100 mL,Los Angeles Basin Plan (Page 3-22)
+Enterococcus,< 61 MPN/100 mL,Central Coast Water Quality Control Board 303(d) evaluation criteria
+Total Coliform,"< 10,000 MPN/100 mL",Santa Barbara County

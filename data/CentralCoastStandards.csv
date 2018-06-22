@@ -1,0 +1,13 @@
+Parameter,WaterQualityStandard,RegulatorySource
+Conductivity,"<3,000 uS/cm","Central Coast Basin Plan, Chapter III, Section II.A.2, Table 3-3"
+Dissolved Oxygen (Cold Water Stream),> 7 mg/L,"Central Coast Basin Plan Chapter III, Section III Page 10"
+Dissolved Oxygen (Warm Water Stream),> 5 mg/L,"Central Coast Basin Plan Chapter III, Section III Page 10"
+pH,< 8.5 or > 7,Central Coast Basin Plan
+Turbidity,< 25 NTU,Central Coast Regional Water Quality Control Board 303(d) evaluation criteria: Sigler et al (2004)
+Nitrate - CC,< 10 mg/L,Central Coast Basin Plan
+Nitrate - NNE,< 1 mg/L,Contact Ben Pitterle for information about this proposed standard
+Nitrate - EPA,< 0.16 mg/L,US EPA Recommended Level for Streams in Ecoregion III sub-region 6
+Phosphate,< 0.03 mg/L,US EPA Recommended Level for Streams in Ecoregion III sub-region 6
+E. coli,< 235 MPN/100 mL,Central Coast Regional Water Quality Control Board 303(d) evaluation criteria: US EPA
+Enterococcus,< 61 MPN/100 mL,Central Coast Regional Water Quality Control Board 303(d) evaluation criteria: US EPA
+Total Coliform,"< 10,000 MPN/100 mL",Santa Barbara County

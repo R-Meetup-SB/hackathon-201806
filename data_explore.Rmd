@@ -1,0 +1,221 @@
+---
+title: "6/21 Santa Barbara Hackathon"
+date: "June 21, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse) # install.packages('tidyverse')
+library(here) # install.packages('here')
+library(skimr) # install.packages('skimr')
+library(lubridate)
+
+```
+
+## Questions
+
++ 
+
+## Exploring Chemistry data
+
+```{r}
+chem <- read_csv('data/Chemistry.csv')
+site_list <- read_csv("data/SiteList.csv")
+head(chem)
+skimr::skim(chem)
+
+## look at stationid
+
+chem %>%
+  dplyr::count(StationID) # 58 different stations. 
+```
+
+There are 58 StationIDs. Are these all different locations?
+
+```{r}
+chem %>%
+  count(TestMaterial)
+```
+
+There are 3 different types of test material
+
+
+Let's look at units:
+```{r}
+chem %>%
+  count(Units)
+```
+
+```{r}
+ggplot(data = chem, 
+       aes(SampleDate, Result,
+           group = Units,
+           colour = Units)) + 
+  geom_point() + 
+  facet_wrap(~ Units, scales = "free") + 
+  theme_bw()
+
+
+```
+
+
+# Bacteria 
+
+
+
+```{r}
+bacteria <- read_csv('data/bacteria.csv')
+
+bacteria %>%
+  count(ParameterCode)
+```
+
+```{r}
+bacteria %>%
+  ggplot(aes(SampleDate, Result)) + 
+  geom_point() +
+  facet_grid(TestMaterial ~ ParameterCode) + 
+  theme_bw()
+```
+
+```{r}
+bacteria %>% filter(ParameterCode == 'Total Coliforms') %>%
+  ggplot(aes(x=SampleDate, y=Result)) +
+  geom_point(color="black", alpha=0.5) +
+  theme_bw() +
+  geom_hline(yintercept=10000, size=1.2, color="firebrick") # to do, label this line
+```
+
+```{r}
+bacteria$year <- lubridate::year(bacteria$SampleDate)
+#ecoli_log_plot <- 
+ecoli_plot <- bacteria %>% 
+  filter(ParameterCode == 'E. Coli') %>%
+  filter(Result <= 200000) %>%
+  ggplot(aes(year, Result, group=year)) +
+  geom_boxplot()+
+  geom_hline(yintercept=235, size=0.8, color="firebrick") + 
+  ggtitle("Boxplot of E. Coli") + 
+  theme_bw() + 
+  coord_cartesian(ylim = c(0, 10000))
+
+ecoli_log_plot <- bacteria %>% 
+  filter(ParameterCode == 'E. Coli') %>%
+  #filter(Result <= 200000) %>%
+  ggplot(aes(year, Result, group=year)) +
+  geom_boxplot()+
+  #geom_hline(yintercept=235, size=0.8, color="firebrick") + 
+  ggtitle("Boxplot of Log of E. Coli") + 
+  theme_bw() + 
+  scale_y_log10()
+
+gridExtra::grid.arrange(ecoli_plot, ecoli_log_plot)
+```
+
+```{r}
+bacteria$year <- lubridate::year(bacteria$SampleDate)
+#ecoli_log_plot <- 
+coliforms_plot <- bacteria %>% 
+  filter(ParameterCode == 'Total Coliforms') %>%
+  ggplot(aes(year, Result, group=year)) +
+  geom_boxplot()+
+  geom_hline(yintercept=10000, size=0.8, color="firebrick") + 
+  ggtitle("Boxplot of Total Coliforms") + 
+  theme_bw() 
+
+coliforms_log_plot <- bacteria %>% 
+  filter(ParameterCode == 'Total Coliforms') %>%
+  ggplot(aes(year, Result, group=year)) +
+  geom_boxplot()+
+  ggtitle("Boxplot of Log of Total Coliforms") + 
+  theme_bw() + 
+  scale_y_log10()
+
+gridExtra::grid.arrange(coliforms_plot, coliforms_log_plot)
+```
+
+
+```{r}
+bacteria %>%
+  filter(ParameterCode == 'Enterococcus') %>%
+  ggplot(aes(year, Result, group=year)) +
+  geom_boxplot()+
+  geom_hline(yintercept=61, size=0.8, color="firebrick") + 
+  ggtitle("Boxplot of Enterococcus") + 
+  theme_bw() 
+
+bacteria %>%
+  filter(ParameterCode == 'Enterococcus') %>%
+  ggplot(aes(year, Result, group=year)) +
+  geom_boxplot()+
+  ggtitle("Boxplot of Enterococcus") + 
+  theme_bw() + 
+  scale_y_log10()
+  
+```
+```{r}
+bacteria %>%
+  group_by(ParameterCode, SampleDate) %>%
+  filter(ParameterCode != 'Duplicate') %>%
+  summarise(avg_result = mean(Result)) %>%
+  ggplot(aes(SampleDate, avg_result, 
+             fill = ParameterCode)) + 
+  geom_line(alpha = 0.8) + 
+  geom_smooth() + 
+  facet_wrap(~ ParameterCode, scales = "free") + 
+  theme_bw()
+```
+```{r}
+bacteria %>%
+  group_by(ParameterCode, SampleDate, TestMaterial) %>%
+  filter(ParameterCode != 'Duplicate') %>%
+  summarise(avg_result = mean(Result)) %>%
+  ggplot(aes(SampleDate, avg_result, 
+             fill = ParameterCode)) + 
+  geom_line(alpha = 0.8) + 
+  geom_smooth() + 
+  facet_grid(TestMaterial ~ ParameterCode, scales = "free") + 
+  theme_bw()
+```
+
+
+```{r}
+site_list[["StationID"]] <- site_list[["SiteCode"]]
+
+my_data_frame <- inner_join(bacteria, site_list, by = c("StationID"))
+
+```
+
+
+```{r}
+ggplot(my_data_frame, 
+       aes(Latitude, Longitude)) + 
+  geom_point()
+
+my_data_frame %>%
+  group_by(ParameterCode, SampleDate, TestMaterial, Watershed) %>%
+  filter(ParameterCode != 'Duplicate') %>%
+  summarise(avg_result = mean(Result)) %>%
+  ggplot(aes(SampleDate, avg_result, 
+             fill = ParameterCode)) + 
+  geom_line(alpha = 0.8) + 
+  geom_smooth() + 
+  facet_grid(Watershed ~ ParameterCode, scales = "free") + 
+  theme_bw()
+```
+```{r}
+my_data_frame %>%
+  group_by(ParameterCode, SampleDate, TestMaterial, Watershed, CreekorStream) %>%
+  filter(ParameterCode != 'Duplicate') %>%
+  summarise(avg_result = mean(Result)) %>%
+  ggplot(aes(SampleDate, avg_result, 
+             colour = ParameterCode)) + 
+  geom_line(alpha = 0.8) + 
+  geom_smooth() + 
+  facet_wrap( ~ CreekorStream, scales = "free") + 
+  theme_bw()
+```
+```
+

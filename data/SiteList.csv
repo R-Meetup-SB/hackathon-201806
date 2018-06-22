@@ -1,0 +1,55 @@
+Watershed,CreekorStream,SiteName,SiteCode,Longitude,Latitude,SamplingFrequency,WaterQualityDataRange,Description
+Carpinteria,Arroyo Paredon Lagoon,Arroyo Paredon Lagoon at Padaro,CMWAP00,-119.558022, 34.413871,monthly year round,2010-Present,Sampled from Padaro Lane
+Carpinteria,Carpinteria Lagoon,Carpinteria Creek Lagoon at State Beach,CMWCL00,-119.518935, 34.391234,monthly year round,2010-Present,Sampled from State Beach bridge
+Carpinteria,Carpinteria Salt Marsh,Carpinteria Salt Marsh at outlet,CMWCM00,-119.536081, 34.398367,monthly year round,2010-Present,NA
+Carpinteria,Carpinteria Salt Marsh,Carpinteria Salt Marsh at Railroad Bridge,CMWCM01,-119.538697, 34.398593,monthly year round,2010-Present,NA
+Carpinteria,Carpinteria Creek,Carpinteria Creek at 8th Street,CMWCP00,-119.514283, 34.392810,monthly year round,2010-Present,(LTER Site) Sampled from footbridge
+Carpinteria,Franklin Creek,Franklin Creek at Carpinteria Ave.,CMWFK00,-119.521907, 34.401268,monthly year round,2010-Present,(LTER Site) Sampled from Carpinteria Ave. bridge
+Carpinteria,Santa Monica Creek,Santa Monica Creek at Via Real,CMWSM01,-119.528771, 34.404873,monthly year round,2010-Present,(LTER Site) Sampled from Via Real bridge
+Goleta,Atascadero Creek,Atascadero Creek at Ward,GVWAT1,-119.821098, 34.423039,monthly year round,2001-Present,"Atascadero creek terminus, tidal influence limit"
+Goleta,Atascadero Creek,Atascadero Creek at Patterson,GVWAT2,-119.810724, 34.424729,monthly year round,2000-Present,Upstream of Maria Ygnacio creek confluence
+Goleta,Atascadero Creek,Atascadero Creek at Puente Drive,GVWAT3,-119.784093, 34.432497,monthly year round,2001-Present,"Above golf course and agriculture, concrete channel"
+Goleta,Bell Creek,Bell Creek Lagoon,GVWBL01,-119.913035, 34.429542,monthly year round,2008-Present,Lagoon site
+Goleta,Bell Creek,Bell Creek at San Miguel Open Space,GVWBL02,-119.905585, 34.439281,monthly year round,2008-Present,Accessible Bell Creek location downstream of agricultural land uses
+Goleta,Cieneguitas Creek,Cieneguitas Creek at Nogal Drive,GVWCG1,-119.770866, 34.436197,monthly year round,2002-Present,Urban runoff signal from upper State St. and Foothill Rd
+Goleta,El Encanto Creek,El Encanto Creek at Devereux Slough,GVWDV20,-119.874089, 34.417646,monthly year round,2014-Present,"Below the golf course influence, main dry weather tributary to Devereux Slough"
+Goleta,El Encanto Creek,El Encanto Creek (Phelps Ditch) above Ocean Meadows Golf Course,GVWDV21,-119.879145, 34.422375,monthly year round,2006-Present,"Above golf course influence, main dry weather tributary to Devereux Slough"
+Goleta,El Encanto Creek,El Encanto Creek (Phelps Ditch) at Phelps Rd.,GVWDV22,-119.880727, 34.424786,monthly year round,2006-Present,Downstream terminus of concrete channel
+Goleta,El Encanto Creek,El Encanto Creek (Phelps Ditch) at Padova Park,GVWDV24,-119.883816, 34.437706,monthly year round,2006-Present,Near upstream extent of urbanized boundary
+Goleta,El Encanto Creek,Tributary of El Encanto Creek (Phelps Ditch) at Evergreen Frisbee Course,GVWDV25,-119.886001, 34.436425,monthly year round,2007-Present,West tributary to El Encanto Creek (Phelps Ditch)
+Goleta,Glen Annie/Tecolotito Creek,Glen Annie/Tecolotito Creek at Hollister Avenue,GVWGA1,-119.858146, 34.431271,monthly year round,2002-Present,"Downstream of urbanized Goleta, Upstream of slough"
+Goleta,Glen Annie/Tecolotito Creek,Glen Annie/Tecolotito Creek at Cathedral Oaks,GVWGA2,-119.875256, 34.441287,seasonally,2002-Present,"Downstream of agriculture and golf course, Upstream of urbanized Goleta"
+Goleta,Goleta Slough,Goleta Slough at the bicycle bridge,GVWGS1,-119.835178, 34.418020,monthly year round,2001-Present,"Upstream of San Pedro, San Jose, and Atascadero Creek mouths"
+Goleta,Los Carneros Creek,Los Carneros Creek at Hollister,GVWLC1,-119.847455, 34.431371,"historic, sampling discontinued",2003-2005,Upstream of Goleta Slough
+Goleta,Los Carneros Creek,Los Carneros Creek at Calle Rea,GVWLC2,-119.853831, 34.439913,seasonally,2002-Present,Downstream limit of agricultural impact
+Goleta,Las Vegas Creek,Las Vegas Creek at La Goleta Road,GVWLV1,-119.842082, 34.450878,seasonally,2007-Present,Near upstream extent of urbanized boundary
+Goleta,Maria Ygnacio Creek,Maria Ygnacio Creek at Patterson,GVWMY01,-119.810770, 34.424801,seasonally,2003-Present,Upstream of Atascadero Creek confluence
+Goleta,Maria Ygnacio Creek,Maria Ygnacio at Old San Marcos Road,GVWMY02,-119.802667, 34.451819,seasonally,2009-Present,Near upstream extent of urbanized boundary
+Goleta,San Jose Creek,San Jose Creek at Hollister Avenue,GVWSJ1,-119.819184, 34.435016,seasonally,2003-Present,Near downstream extent of urbanized boundary
+Goleta,San Jose Creek,San Jose Creek at North Patterson Avenue,GVWSJ2,-119.810161, 34.457608,monthly year round,2004-Present,"Above urban boundary, upstream agricultural runoff"
+Goleta,San Pedro Creek,San Pedro Creek near Hollister Avenue,GVWSP1,-119.830897, 34.432160,seasonally,2003-Present,Near downstream extent of urbanized boundary
+Goleta,San Pedro Creek,San Pedro Creek at Cathedral Oaks Road,GVWSP3,-119.834189, 34.453410,seasonally,2008-Present,"Near upstream extent of urbanized boundary (Note: samples submitted prior to May, 2009 as SP02)"
+Goleta,Tecolote Lagoon,Tecolote Creek Lagoon,GVWTC01,-119.917472, 34.431986,monthly year round,2001-Present,Lagoon site
+Goleta,Tecolote Creek,Tecolote Creek at Vereda del Padre,GVWTC02,-119.916586, 34.437096,monthly year round,2008-Present,Accessible Tecolote Creek location downstream of agricultural land uses
+Ventura River,Ventura Estuary,Ventura River Estuary,VRW000,-119.309125, 34.276988,monthly year round,2007-Present,Ventura River Estuary
+Ventura River,Ventura River,Ventura River at Main Street Bridge,VRW001,-119.308016, 34.281003,monthly year round,2001-Present,"At this site water is sampled immediately upstream of the Main Street bridge. The floodplain here is wide with a mix of sandy soil and willow and non-native Arundo donas. During heavy storms, when river access for sampling is dangerous and difficult, sampling is conducted by lowering a bucket from the bridge span."
+Ventura River,Ventura River,Ventura River near Stanley Drain,VRW002,-119.301499, 34.304844,"historic, sampling discontinued",2001-2008,"This site is located just above the confluence with the large Stanley storm drain, which serves semi-industrial and brownfield areas in northern Ventura. Flow is typically confined within a narrow channel on the far side of the floodplain."
+Ventura River,Ventura River,Ventura River at Shell Road,VRW003,-119.29608, 34.316435,"historic, sampling discontinued",2001-2008,Downstream of Ojai Valley Sanitary District
+Ventura River,Canada Larga Creek,Lower Canada Larga Creek,VRW004,119.294114, 34.336916,seasonally,2001-Present,Captures drainage from Canada Larga watershed just before confluence with Ventura River
+Ventura River,Canada Larga Creek,Upper Canada Larga Creek,VRW005,-119.252581, 34.357559,"historic, sampling discontinued",2001-2008,Captures drainage from upper Canada Larga watershed
+Ventura River,Ventura River,Ventura River at Foster Park,VRW006,-119.307995, 34.351825,monthly year round,2001-Present,"Above Ojai Valley Sanitary District, downstream of San Antonio Creek confluence, USGS gauging station"
+Ventura River,San Antonio Creek,San Antonio Creek at Old Creek Road,VRW007,-119.302736, 34.382277,"historic, sampling discontinued",2001-2009,Sampled at Old Creek Road arizona crossing
+Ventura River,Lion Canyon,Lion Canyon,VRW008,-119.263549, 34.42209,seasonally,2001-2009,"Sampled just above San Antonio Creek confluence, captures upstream agricultural impacts"
+Ventura River,Stewart Canyon,Stewart/Fox Creek,VRW009,-119.248065, 34.435227,monthly year round,2001-Present,Captures drainage from urbanized City of Ojai
+Ventura River,San Antonio Creek,San Antonio Creek above confluence with Stewart/Fox Creek,VRW010,-119.245949, 34.435217,monthly year round,2001-Present,Upstream of confluence with Stewart/Fox Creek.
+Ventura River,Ventura River,Ventura River at Santa Ana Road bridge,VRW011,-119.308056, 34.399444,seasonally,2001-2010,Captures upstream agricultural and suburban impacts
+Ventura River,Ventura River,Ventura River at Highway 150,VRW012,-119.300593, 34.425184,seasonally,2001-2011,Downstream of Robles Diversion Dam. Captures upstream agricultural and suburban impacts
+Ventura River,Matilija Creek,Matilija Creek,VRW013,-119.301944, 34.483056,"historic, sampling discontinued",2001-2009,Downstream of Matilija Dam. Major tributary of Ventura River
+Ventura River,North Fork Matilija Creek,North Fork Matilija Creek,VRW014,-119.306389, 34.492778,monthly year round,2001-Present,Major tributary of Ventura River. Relatively pristine sampling location
+Ventura River,Matilija Creek,Upper Matilija Creek,VRW015,-119.32935, 34.4942,monthly year round,2001-Present,Upstream of Matilija Dam. Major tributary of Ventura River
+Ventura River,San Antonio Creek,San Antonio Creek at Lion Canyon,VRW017,-119.264469, 34.422696,monthly year round,2005-Present,Upstream of Lion Canyon
+Ventura River,Ventura River,Ventura River at Canada Larga,VRW03.5,-119.296979, 34.338595,monthly year round,2008-Present,"Downstream of Ojai Valley Sanitary District, above Canada Larga Creek"
+Ventura River,Ventura River,Ventura River Ojai Valley Sanitation District,VRW06.1,-199.299279, 34.345424,monthly year round,2009-Present,Upstream of OVSD discharge
+Ventura River,Ventura River,Ventura River at San Antonio Creek Confluence,VRW06.3,-119.308, 34.3806,monthly year round,2008-Present,"Above San Antonio Creek Confluence, in dry years this site is primarily re-surfacing groundwater."
+Ventura River,San Antonio Creek,San Antonio Creek above confluence with Ventura River,VRW07A,-119.306358, 34.380745,monthly year round,2009,Just above confluence with Ventura River upstream of bike path bridge
+Ventura River,Ventura River,Ventura River at Camino Cielo,VRW12.9,-119.296368, 34.482791,monthly year round,2009-Present,Downstream of Matilija Creek and N. Fork Matilija Creek confluence
