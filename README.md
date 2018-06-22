@@ -49,4 +49,9 @@ We will work in teams of 3-4 participants. We hope we can create team in an orga
 
 Please be inclusive of your teammates independently of their coding level. Welcome, encourage, listen and discuss all people contributions to the final product of your team.
 
+# Water quality quick guide
 
+- high conductivity = pollution (sometimes natural)
+- high nitrate + low DO = agricultural
+- high pH + low DO = algae/agricultural
+- high bacteria = humans/cows/horses
