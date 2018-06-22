@@ -4,6 +4,14 @@
 
 # Created By: Raul Eulogio
 
+
+# Purpose -----------------------------------------------------------------
+
+# This script was created to clean xlsx file and return tidy csv files. 
+# Serves as a run only once script, where loading csv files into working
+# environment is recommended path since running/sourcing this script everytime 
+# to load data would take a while. 
+
 # Load Packages -----------------------------------------------------------
 
 # If needed this would handle downloading all dependencies (except `here` package)
@@ -116,10 +124,18 @@ clean_data = list("Chemistry" = chemistry,
 # Create array containing output file name and path
 csv_names <- sprintf("data/%s.csv", names(my_data))
 
-# for-loop to create new csv files with tidy data
-for (i in 1:length(clean_data)){
-  clean_data[[i]] %>%
-    readr::write_csv(path = csv_names[[i]])
+# Here we're checking if any of the previously created csv files exist in the
+# data directory. If not then the for-loop will run and output csv files. 
+if (any(!file.exists(csv_names))) {
+  # for-loop to create new csv files with tidy data
+  for (i in 1:length(clean_data)){
+    clean_data[[i]] %>%
+      readr::write_csv(path = csv_names[[i]])
+  }
+  print("Done")
+} else {
+  print("CSV files have already been created!")
+  print("To load data into working environment load CSV files directly using read_csv/read.csv.")
 }
 
-print('Done!')
+
