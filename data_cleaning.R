@@ -30,14 +30,16 @@ here::here()
 # Get file path
 file_path <- here::here("hackathon_20180621.xlsx") 
 
-
 # Load Data ---------------------------------------------------------------
+read_sheets_max <- function(x, path_name){
+  excel_sheet <- readxl::read_xlsx(x, path = path_name, guess_max = 2000)
+}
 
 # Load data into a list of dataframes
 my_data <- file_path %>%
   readxl::excel_sheets() %>%
   purrr::set_names() %>%
-  purrr::map(readxl::read_xlsx, path = file_path)
+  purrr::map(read_sheets_max, path = file_path)
 
 # Create dataframes for each sheet
 chemistry <- my_data[["Chemistry"]]
