@@ -1,7 +1,7 @@
----
-title: "Mob programming"
-output: html_notebook
----
+
+
+
+
 
 ### Basic principles & practices by Woody Zuill
 
