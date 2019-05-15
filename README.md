@@ -55,3 +55,11 @@ Please be inclusive of your teammates independently of their coding level. Welco
 - high nitrate + low DO = agricultural
 - high pH + low DO = algae/agricultural
 - high bacteria = humans/cows/horses
+
+## Outputs
+
+Besides the scripts in this repo, there was a group effort to develop an interactive visualization:
+
+https://github.com/bbest/shiny-ck
+
+
