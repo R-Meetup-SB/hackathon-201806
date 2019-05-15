@@ -1,0 +1,49 @@
+---
+title: "main"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r}
+library("tidyverse")
+source("data_cleaning.R")
+```
+
+```{r}
+clean_ccstandards <- central_coast_standards %>%
+  mutate(limit = gsub("(<|>|,) ?","",WaterQualityStandard)) %>%
+  separate(limit,c("limit","units"),sep = " ") %>%
+  mutate(limit = as.numeric(limit))
+```
+
+
+```{r}
+unique(chemistry$ParameterCode)
+
+chemistry <- chemistry %>%
+  mutate(limit = 
+           case_when(
+             ParameterCode == "conductivity" ~ "3000",
+             ParameterCode == "do" ~ "5",
+             ParameterCode == "do % sat" ~ "100",
+             ParameterCode == "ph" ~ "8.5",
+             ParameterCode == "temp" ~ "25",
+             ParameterCode == "turb" ~ "25")) %>%
+  mutate(limit = as.numeric(limit))
+
+chem <- split(chemistry, chemistry$ParameterCode)
+
+plot_fun <- function(param){
+  ggplot(param, aes(x = SampleDate, y = Result)) +
+  geom_line() +
+  facet_wrap(~ StationID, scales = "free") +
+  geom_hline(yintercept = param$limit, color = "red") +
+  theme_bw()
+}
+
+map(chem, plot_fun)
+```
+
